@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радослав Митов</title>
+    <style>
+        /* Slideshow styles */
+        .slideshow-container {
+            max-width: 600px; /* Set the max width of the slideshow */
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none; /* Hide all slides by default */
+        }
+
+        img {
+            width: 100%; /* Make images responsive */
+            border-radius: 15px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Show images */
+        .show {
+            display: block !important; /* Important to override previous styles */
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Header and Footer styles */
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        /* Navigation links */
+        header a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Centering the paragraph */
+        p {
+            text-align: center; /* Center the text in the paragraph */
+            margin: 20px auto; /* Add some margin for spacing */
+            max-width: 600px; /* Set a max width for the paragraph */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Радослав Митов</h1>
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contacts.html">Contact Me</a>
+    </header>
+    
+    <p>Здравейте! Казвам се Радослав Митов и се занимавам с програмиране от две години. Имам опит с HTML и CSS, както и с C#, които използвам за изграждане на уебсайтове и разработка на приложения.</p>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade show">
+                <img src="./media/viber_image_2024-10-06_17-29-49-885.jpg" alt="Image 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="./media/viber_image_2024-10-06_17-29-50-077.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="./media/viber_image_2024-10-06_21-00-57-615.jpg" alt="Image 3">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Радослав Митов. Всички права запазени.</p>
+    </footer>
+
+    <script src="animation.js"></script> 
+</body>
+</html>

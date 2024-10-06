@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #1a73e8;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    background-color: #2874f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #0c5fd6;
+}
+
+main {
+    max-width: 1000px; /* Keep this for main page */
+    margin: 0 auto; /* Centering the main content */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center; /* Centering text in the main section */
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    align:center ;
+    display: none; /* Hide images by default */
+}
+
+.mySlides img {
+    display: flex;
+    object-fit: cover;
+    width: 420px; /* Set a fixed size for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Link Styles */
+main a {
+    display: inline-block;
+    margin: 10px 0; /* Spacing between links */
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main a:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #999;
+}
+/* Slideshow Styles */
+.mySlides {
+    display: none; /* Hide images by default */
+    opacity: 0; /* Start with images hidden */
+    transition: opacity 1s ease-in-out; /* Transition effect for opacity */
+}
+
+.mySlides.show {
+    display: block; /* Show image */
+    opacity: 1; /* Fully visible */
+}
