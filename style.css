@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #ff6347;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #f39c12;
+}
+
+header p {
+    color: #ecf0f1;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.media-container video,
+.media-container img {
+    flex: 1 1 300px; /* Make sure each item takes a minimum of 300px space */
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header a {
+        display: block;
+        margin: 10px 0;
+    }
+    .media-container {
+        flex-direction: column;
+    }
+}
